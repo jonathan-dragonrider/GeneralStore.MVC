@@ -9,12 +9,16 @@
 </div>
 
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-4">
         <h2>Products</h2>
         <p>
             The Varrock General Store provides basic items for questing and skilling.
         </p>
         @Html.ActionLink("Check Products", "Index", "Product", null, new { @class = "btn btn-primary btn-large" })
+    </div>
+    <div>
+        <h2>Customers</h2>
+        @Html.ActionLink("View Customers", "Index", "Customer", null, new { @class = "btn btn-primary btn-large"})
     </div>
     @*<div class="col-md-4">
         <h2>Get more libraries</h2>
