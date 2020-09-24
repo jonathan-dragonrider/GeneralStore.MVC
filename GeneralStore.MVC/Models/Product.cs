@@ -26,5 +26,7 @@ namespace GeneralStore.MVC.Models
         [Display(Name = "Perishable ")]
         public bool IsFood { get; set; }
 
+        public List<Transaction> Transactions { get; set; }
+
     }
 }

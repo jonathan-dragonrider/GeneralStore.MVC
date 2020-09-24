@@ -19,7 +19,7 @@ namespace GeneralStore.MVC.Models
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
-        [Display(Name = "Full Name")]
+        [Display(Name = "Customer Name")]
         public string FullName
         {
             get
@@ -27,5 +27,8 @@ namespace GeneralStore.MVC.Models
                 return FirstName + " " + LastName;
             }
         }
+
+        public List<Transaction> Transactions { get; set; }
+
     }
 }

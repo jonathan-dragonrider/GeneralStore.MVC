@@ -172,6 +172,8 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\TransactionController.cs" />
+    <Compile Include="Controllers\TransactionsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -182,6 +184,26 @@
     <Compile Include="Migrations\202009231416281_AddedCustomer.cs" />
     <Compile Include="Migrations\202009231416281_AddedCustomer.Designer.cs">
       <DependentUpon>202009231416281_AddedCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009231533262_AddedTransaction.cs" />
+    <Compile Include="Migrations\202009231533262_AddedTransaction.Designer.cs">
+      <DependentUpon>202009231533262_AddedTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009232236091_DateTimeOffsetNow.cs" />
+    <Compile Include="Migrations\202009232236091_DateTimeOffsetNow.Designer.cs">
+      <DependentUpon>202009232236091_DateTimeOffsetNow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009232247322_RevertLastChange.cs" />
+    <Compile Include="Migrations\202009232247322_RevertLastChange.Designer.cs">
+      <DependentUpon>202009232247322_RevertLastChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009240021534_ChangeForeignKeySyntax.cs" />
+    <Compile Include="Migrations\202009240021534_ChangeForeignKeySyntax.Designer.cs">
+      <DependentUpon>202009240021534_ChangeForeignKeySyntax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009240039073_AddedTransactionList.cs" />
+    <Compile Include="Migrations\202009240039073_AddedTransactionList.Designer.cs">
+      <DependentUpon>202009240039073_AddedTransactionList.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -259,6 +281,13 @@
     <Content Include="Views\Customer\Details.cshtml" />
     <Content Include="Views\Customer\Edit.cshtml" />
     <Content Include="Views\Customer\Index.cshtml" />
+    <Content Include="Views\Transaction\Index.cshtml" />
+    <Content Include="Views\Transaction\Create.cshtml" />
+    <Content Include="Views\Transactions\Create.cshtml" />
+    <Content Include="Views\Transactions\Delete.cshtml" />
+    <Content Include="Views\Transactions\Details.cshtml" />
+    <Content Include="Views\Transactions\Edit.cshtml" />
+    <Content Include="Views\Transactions\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -282,6 +311,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202009231416281_AddedCustomer.resx">
       <DependentUpon>202009231416281_AddedCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009231533262_AddedTransaction.resx">
+      <DependentUpon>202009231533262_AddedTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009232236091_DateTimeOffsetNow.resx">
+      <DependentUpon>202009232236091_DateTimeOffsetNow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009232247322_RevertLastChange.resx">
+      <DependentUpon>202009232247322_RevertLastChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009240021534_ChangeForeignKeySyntax.resx">
+      <DependentUpon>202009240021534_ChangeForeignKeySyntax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009240039073_AddedTransactionList.resx">
+      <DependentUpon>202009240039073_AddedTransactionList.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

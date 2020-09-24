@@ -13,12 +13,12 @@ namespace GeneralStore.MVC.Models
         [Key]
         public int TransactionId { get; set; }
 
-        [ForeignKey("Customer")]
         public int CustomerId { get; set; }
+        [ForeignKey("CustomerId")]
         public Customer Customer { get; set; }
 
-        [ForeignKey("Product")]
         public int ProductId { get; set; }
+        [ForeignKey("ProductId")]
         public Product Product { get; set; }
 
         [Required]
